@@ -1,8 +1,15 @@
-{% extends "base.html" %}
+{% extends "homepage/base.html" %}
 {% load l10n_tags %}
 
-{% block links %}<link rel="stylesheet" href="{% locale_url schools_css slug=school.slug %}?v=1">{% endblock %}
-
-{% block breadcrumbs %}
-  <li><span class="divider">&rsaquo;</span><a href="{{ school.get_absolute_url }}">{{ school.name }}</a></li>
+{% block links %}
+	<link rel="stylesheet" href="{% locale_url schools_css slug=school.slug %}?v=1">
 {% endblock %}
+
+<div class="content">
+	{% block breadcrumbs %}
+		<li>
+			<span class="divider">&rsaquo;</span>
+			<a href="{{ school.get_absolute_url }}">{{ school.name }}</a>
+		</li>
+	{% endblock %}
+</div>
