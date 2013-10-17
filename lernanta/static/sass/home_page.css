@@ -76,6 +76,9 @@ footer {
 .navbar .brand {
   background: url("/static/images/homepage/logo-p2pu-menu.png") !important; }
 
+.action {
+  margin: 0; }
+
 /**************Jumbotron**************/
 .jumbotron {
   margin-bottom: 50px;
