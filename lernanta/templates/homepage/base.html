@@ -35,7 +35,7 @@
 	{% block head_js %}
 		<script src="{{ STATIC_URL }}ckeditor/ckeditor/ckeditor.js"></script>{% endblock %}
 </head>
-<body class="{% block bodyclasses %}{% endblock %}">
+<body id="{% block bodyid %}{% endblock %}" class="{% block bodyclasses %}{% endblock %}">
 <!--[if lt IE 7]>
     <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 <![endif]-->
@@ -95,7 +95,7 @@
 </nav>
 
 <div class="container">
-	<ul class="breadcrumb">
+	<ul class="action clearfix unstyled">
     <span id="breadcrumbs-actions" class="pull-right">
     {% block breadcrumbs_actions %}{% endblock %}
   </span>
